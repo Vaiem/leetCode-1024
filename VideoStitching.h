@@ -14,18 +14,8 @@ Return the minimum number of clips needed so that we can cut the clips into segm
 class Solution {
 public:
     int videoStitching(std::vector<std::vector<int>>& clips, int time) {
-        int maxItem = INT_MIN;
 
         int lenghtVideo = clips[0].size() - 1;
-
-        for (size_t i = 0; i < clips.size(); i++)
-        {
-            maxItem = std::max(maxItem, clips[i][lenghtVideo]);
-        }
-        if (maxItem < time)
-        {
-            return -1;
-        }
         
         std::vector<std::vector<int>> res;
         
