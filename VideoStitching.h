@@ -10,6 +10,7 @@ Return the minimum number of clips needed so that we can cut the clips into segm
 
 #pragma once
 #include<vector>
+
 class Solution {
 public:
     int videoStitching(std::vector<std::vector<int>>& clips, int time) {
